@@ -1,13 +1,17 @@
 {
-  "name": "webpractik/bitrixoa",
+  "name": "studiofact/bitrixoa",
   "description": "A package for generating annotations and drawing SwUi when working with Bitrix controllers.",
   "keywords": ["bitrix", "swagger", "bitrix controllers"],
   "bin": [
     "bin/bitrixoa"
   ],
-  "homepage": "https://github.com/webpractik/bitrixoa",
+  "homepage": "https://github.com/studiofact/bitrixoa",
   "license": "MIT",
   "authors": [
+    {
+      "name": "Юрий Данильченко (yurid)",
+      "email": "du@studiofact.ru"
+    },
     {
       "name": "Петр Кленкин (mnlght)",
       "email": "pk@webpractik.ru"
