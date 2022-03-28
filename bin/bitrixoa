@@ -124,7 +124,7 @@ Options:
                     /local/modules, игнорируя outdir
   --output (-o)     Path to store the generated documentation.
                     ex: --output openapi.yaml
-  --relative (-r)   Path relative to site document root
+  --relative (-r)   Relative part of the path to store the generated documentation
                     ex: --relative local/modules/namespace.module/
   --exclude (-e)    Exclude path(s).
                     ex: --exclude vendor,library/Zend
