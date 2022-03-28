@@ -21,6 +21,7 @@ $options = [
     'bitrix-generate' => false,
     'index-mode' => false,
     'processor' => [],
+    'relative' => '',
 ];
 $aliases = [
     'o' => 'output',
@@ -30,7 +31,8 @@ $aliases = [
     'h' => 'help',
     'd' => 'debug',
     'p' => 'processor',
-    'f' => 'format'
+    'f' => 'format',
+    'r' => 'relative',
 ];
 $needsArgument = [
     'output',
@@ -39,6 +41,7 @@ $needsArgument = [
     'pattern',
     'bootstrap',
     'processor',
+    'relative',
 ];
 $paths = [];
 $error = false;
@@ -273,7 +276,7 @@ if ($bitrixMarker) {
 
 
 if ($indexMarker) {
-    (new \BitrixOA\UiService($options['output']))->exportWithIndexPage();
+    (new \BitrixOA\UiService($options['relative'].$options['output']))->exportWithIndexPage();
 }
 
 exit($exit);
