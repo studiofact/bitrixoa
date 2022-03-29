@@ -122,10 +122,12 @@ Usage: openapi [--option value] [/path/to/project ...]
 Options:
   --bitrix-generate При указании автоматически ищет аннотации в папке
                     /local/modules, игнорируя outdir
+  --relative (-r)   Часть пути к сгенерированному файлу относительно DOCUMENT_ROOT сайта.
+                    Нужен, когда генерация документации происходит не в корне сайта.
+                    Значение подставляется в ссылку на yaml-файл в сгенерированном html.
+                    ex: --relative local/modules/namespace.module/
   --output (-o)     Path to store the generated documentation.
                     ex: --output openapi.yaml
-  --relative (-r)   Relative part of the path to store the generated documentation
-                    ex: --relative local/modules/namespace.module/
   --exclude (-e)    Exclude path(s).
                     ex: --exclude vendor,library/Zend
   --pattern (-n)    Pattern of files to scan.
